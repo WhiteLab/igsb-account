@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IGSB Account</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/account.css' %}">
+    {% block extra_css %}{% endblock %}
+
+    {% block extra_js %}{% endblock %}
+</head>
+<body>
+    <div class="igsb-account-header"></div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
