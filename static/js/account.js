@@ -42,7 +42,6 @@ window.onload = function() {
     var accountForm = document.getElementById('account-form');
     accountForm.onsubmit = function() {
         if (!passwordsMatch || username.value.trim() == '') {
-            alert('do not match');
             return false;
         } else {
             accountForm.submit();
