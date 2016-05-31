@@ -1,16 +1,25 @@
 {% extends 'account/base.html' %}
 {% load staticfiles %}
 
+{% block extra_js %}
+{% if app_name %}
+    <script>
+    window.setTimeout(function(){
+        window.location.replace('{{ app_redirect_url }}')
+    }, 3000);
+    </script>
+{% endif %}
+{% endblock %}
+
 {% block content %}
 <div class="container-fluid igsb-account-create">
     <div class="container">
         <div class="row">
             <div class="col-sm-8" style="color:white;font-size:2em;">
-                <span>
-                    An error occurred.<br/>Please contact a system administrator at
-                    <a href="mailto:{{ admin_email }}" class="sliding-middle-out">{{ admin_email }}</a>
-                </span><br/>
-                <a href="{% url 'create_home' %}" class="sliding-middle-out">Go home</a>
+                <span>The password for account {{ account_name }} was successfully changed.</span><br/>
+                {% if app_name %}
+                <span>You will be redirected back to {{ app_name }} shortly.</span>
+                {% endif %}
             </div>
             <div class="col-sm-4">
                 <img src="{% static 'img/logo.png' %}" style="max-width:100%">

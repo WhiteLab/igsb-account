@@ -1,0 +1,118 @@
+body {
+    background: #EFEFEF;
+}
+
+.igsb-account-messages-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.igsb-account-header {
+    height: 200px;
+    text-align: center;
+}
+
+.igsb-account-create {
+    /*background: #5788c2;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(87,136,194,1);
+    background: -moz-linear-gradient(-45deg, rgba(87,136,194,1) 0%, rgba(87,136,194,1) 67%, rgba(239,239,239,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(87,136,194,1)), color-stop(67%, rgba(87,136,194,1)), color-stop(100%, rgba(239,239,239,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(87,136,194,1) 0%, rgba(87,136,194,1) 67%, rgba(239,239,239,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(87,136,194,1) 0%, rgba(87,136,194,1) 67%, rgba(239,239,239,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(87,136,194,1) 0%, rgba(87,136,194,1) 67%, rgba(239,239,239,1) 100%);
+    background: linear-gradient(135deg, rgba(87,136,194,1) 0%, rgba(87,136,194,1) 67%, rgba(239,239,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5788c2', endColorstr='#efefef', GradientType=1 );
+}
+
+.igsb-account-create a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #fff;
+}
+
+.igsb-account-create-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.igsb-account-create-hoverbox {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: -110px;
+    border-radius: 12px;
+    background: #a09d9e;
+    text-align: center;
+}
+
+.igsb-account-create-form-header {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.igsb-account-create-form {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.igsb-account-create-form-text {
+    padding: 8px 12px;
+    border-radius: 4px;
+    /*border: 2px solid #337ab7;*/
+    border: 0;
+    margin: 8px 0;
+    font-size: 2rem;
+    width: 80%;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.igsb-account-create-form-text:focus {
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(87,136,194,1);
+}
+
+.igsb-account-create-submit-btn {
+    color: #fff;
+    background-color: #f4731c;
+    border-color: #d46011;
+}
+
+.igsb-account-create-submit-btn:hover, .igsb-account-create-submit-btn:focus {
+    color: #fff;
+    background-color: #d46011;
+}
